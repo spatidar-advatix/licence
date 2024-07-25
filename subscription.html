@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>licensing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="MyraStudio" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- <link rel="shortcut icon" href="assets/images/favicon.ico"> -->
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+
+             
+                <div class="d-flex align-items-center" style="margin-left:auto;">
+
+                  
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-3.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-sm-inline-block ml-1">John</span>
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                           
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">
+                                <span>Profile</span>
+                                <span>
+                                    <span class="badge badge-pill badge-warning">1</span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">
+                                Settings
+                            </a>
+                           
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">
+                                <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <div class="navbar-brand-box">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/weship-logo.png" />
+                    </a>
+                </div>
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        
+                       <li>
+                            <a href="index.html" class="waves-effect"><i class='bx bx-home-smile'></i><span>Dashboard </span></a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect"><i class='bx bx-home-smile'></i><span>User Management </span></a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="create-user.html">Create user</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li>
+                            <a href="client.html" class="waves-effect"><i class="bx bx-user"></i><span>Client Management</span></a>
+                            
+                        </li>
+
+                        
+                        <li>
+                            <a href="subscription.html" class="waves-effect"><i class="bx bx-user"></i><span>Subscription Details</span></a>
+                            
+                        </li>
+
+                    
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+      
+        <div class="main-content">
+
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+               
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-18">Subscription Details</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+					
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="top-btns tab_button">
+                                <div class="card">
+                                <div class="card-body">
+
+                                  
+                                    <ul class="nav nav-tabs mb-3">
+                                        <li class="nav-item"> 
+                                            <a href="#license" data-toggle="tab" aria-expanded="false" class="nav-link btn-primary  active">
+                                                <i class="mdi mdi-home-variant d-lg-none d-block"></i>
+                                                <span class="d-none d-lg-block">License</span>
+                                            </a>
+                                        </li>
+										<li class="nav-item">
+                                            <a href="#users" data-toggle="tab" aria-expanded="false" class="nav-link btn-primary">
+                                                <i class="mdi mdi-account-circle d-lg-none d-block"></i>
+                                                <span class="d-none d-lg-block">Users</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#inbound" data-toggle="tab" aria-expanded="true" class="nav-link btn-primary">
+                                                <i class="mdi mdi-account-circle d-lg-none d-block"></i>
+                                                <span class="d-none d-lg-block">Inbound Transactions</span>
+                                            </a>
+                                        </li>
+                                         <li class="nav-item">
+                                            <a href="#outbound" data-toggle="tab" aria-expanded="true" class="nav-link btn-primary">
+                                                <i class="mdi mdi-account-circle d-lg-none d-block"></i>
+                                                <span class="d-none d-lg-block">Outbound Transactions</span>
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+
+                                   
+
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form class="searchForm filter_box">
+                                <div class="searcInput">
+                                <i class="bx bx-search"></i>
+                                <input type="search" name="" placeholder="Search Client">
+                                </div>
+                            
+                             <div class="btn-group" role="group">
+                                            <button id="btnGroupDrop1" type="button"
+                                                class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Filter <i class="mdi mdi-chevron-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                    <div class="row">
+                                                        <div class="form-group col-lg-6">
+                                                            <label>Client Name</label>
+                                                            <select class="form-control">
+                                                                <option>Puffco</option>
+                                                                <option>WeShip</option>
+                                                                <option>JLM</option>
+                                                                <option>3-Sprouts</option>  
+																<option>BurnBootCamp</option>  
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-lg-6">
+                                                            <label>FC</label>
+                                                            <select class="form-control">
+                                                                <option>NROC</option>
+                                                                <option>LAXX1</option>
+                                                                <option>DFWX1</option>                                                                
+                                                            </select>
+                                                        </div>
+                                                       
+                                                         <div class="form-group col-lg-6">
+                                                            <label>Date From</label>
+                                                            <input  class="form-control" type="date" name="">
+                                                        </div>
+                                                        <div class="form-group col-lg-6">
+                                                            <label>Date To</label>
+                                                            <input  class="form-control" type="date" name="">
+                                                        </div>
+                                                        <div class="form-group col-lg-12 text-center">
+                                                            <button type="button" class="btn btn-primary">Search</button>
+                                                            <button type="button" class="btn btn-primary">Reset</button>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        </form>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                         <div class="tab-content col-lg-12">
+                            <div class="tab-pane active show" id="license">
+                                                <div class="col-xl-12" style="padding: 0;" >
+      <div class="card">
+         <div class="card-body">
+            <div class="table-responsive">
+               <table class="table mb-0">
+                  <thead class="thead-light">
+                     <tr>
+                        <th><input type="checkbox" name=""></th>
+                        <th>Year</th>
+                        <th>Subscription Date</th>
+                        <th>Subscription Expiry Date</th>
+                        <th>Billing Amount</th>
+                        <th>No. of Users</th>
+                        <th></th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td><input type="checkbox" name=""></td>
+                        <td><a>John</a></td>
+                        <td>Role Info</td>
+                        <td>XDFG1234</td>
+                        <td>12/11/2022</td>
+                        <td class="active_status">Active</td>
+                        <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox" name=""></td>
+                        <td><a>John</a></td>
+                        <td>Role Info</td>
+                        <td>XDFG1234</td>
+                        <td>12/11/2022</td>
+                        <td class="active_status">Active</td>
+                        <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox" name=""></td>
+                        <td><a>John</a></td>
+                        <td>Role Info</td>
+                        <td>XDFG1234</td>
+                        <td>12/11/2022</td>
+                        <td class="active_status">Active</td>
+                        <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                     </tr>
+                     <tr>
+                        <td><input type="checkbox" name=""></td>
+                        <td><a>John</a></td>
+                        <td>Role Info</td>
+                        <td>XDFG1234</td>
+                        <td>12/11/2022</td>
+                        <td class="active_status">Active</td>
+                        <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="fa fa-eye"></i></a></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <!-- end card-body-->
+      </div>
+      <!-- end card -->
+   </div>
+   <!-- end col -->
+                                        </div>
+                                        <div class="tab-pane " id="users">
+                                                <div class="col-xl-12" style="padding: 0;" >
+                            <div class="card">
+                                <div class="card-body">
+                                    
+                                   
+                                    <div class="table-responsive">
+                                        <table class="table mb-0">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th><input type="checkbox" name=""></th>
+                                <th>Username</th>
+                               
+                                <th>Role</th>
+                                <th>FC</th>
+                                <th>Created Date </th>
+                                <th>Last Login Date </th>
+                                 <th>Inactive Date </th>
+                                <th>Status</th>
+                                <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                              <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                              <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                              <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                              <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                              <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                              <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                              <tr>
+                                <td><input type="checkbox" name=""></td>
+                                <td><a>John</a></td>
+                                <td>Role Info</td>
+                                <td>XDFG1234</td>
+                                <td>12/11/2022</td>
+                                <td>12/11/2022</td>
+                                <td>12/12/2022</td>
+                                
+                                <td class="active_status">Active</td>
+                                <td><a href="javascript:void(0);" data-toggle="modal" data-target="#client_edit" class="edit_client_info"><i class="bx bx-edit-alt"></i></a></td>
+                            </tr>
+                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <!-- end card-body-->
+                            </div>
+                            <!-- end card -->
+
+                        </div>
+                        <!-- end col -->
+						
+						
+                                        </div>
+										
+                                        <div class="tab-pane " id="inbound">
+                                                <h1>Inbound Transactions</h1>
+                                        </div>
+                                        <div class="tab-pane" id="outbound">
+                                            <h1>Outbound Transactions</h1>
+                                        </div>
+                                    </div>
+                               
+                    </div>
+
+                </div> 
+            </div>
+           
+
+          
+        </div>
+        
+
+    </div>
+
+
+
+                                     <div class="modal fade" id="add_new_client" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Add New Client</h5>
+                                                    <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  
+                                                   <div class="Client_informationBox">
+                                                         <form>
+                                                            <div class="row">
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">FC Details</label>
+                                            <select class="form-control">
+                                                <option>XDF001</option>
+                                                <option>XDF002</option>
+                                            </select>
+                                        </div>
+                                         <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">Subscription Details</label>
+                                            <select class="form-control">
+                                                <option>User License</option>
+                                                 <option>User License</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">Client Name
+</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Client Name">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">Client ID
+</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Client ID">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">Address</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Address">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">Country</label>
+                                            <select class="form-control">
+                                                <option>USA</option>
+                                                <option>USA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleFormControlSelect1">Status</label>
+                                            <select class="form-control">
+                                                <option>Active</option>
+                                                <option>Inactive</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">City</label>
+                                           <select class="form-control">
+                                                <option>Texas</option>
+                                                <option>Texas</option>
+                                                <option>Texas</option>
+                                                <option>Texas</option>
+                                                <option>Texas</option>
+                                                <option>Texas</option>
+                                                <option>Texas</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">ZIP Code
+</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter ZIP Code">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">Contact Name
+</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact Name">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">Contact Email
+</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Contact Email">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">Contact Phone</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Contact Phone">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">Business Phone
+</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Business Phone">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">LOB</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter LOB">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">Client Onboarding Date
+</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Client Onboarding Date">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputEmail1">Last Billing Date
+</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Last Billing Date">
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">Next Billing Date
+</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Next Billing Date">
+                                        </div>
+                                         <div class="form-group col-lg-4">
+                                            <label for="exampleInputPassword1">Last Billing Amount
+</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Last Billing Amount">
+                                        </div>
+
+                                         <div class="form-group col-lg-12">
+                                        <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button></div>
+                                    </div>
+                                    </form>
+                                                   </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                   
+    
+    
+
+
+    <div class="menu-overlay"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <script type="text/javascript">
+        $(document).on('click', '.dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+    </script>
+
+</body>
+
+</html>
